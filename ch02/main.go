@@ -19,4 +19,9 @@ func main() {
 	f := int64(a) * e // int64 * int64
 
 	fmt.Print(a, b, c, d, e, f)
+
+	var g int = int(b * 3)
+	var h int = int(b) * 3
+
+	fmt.Print(g, h)
 }
