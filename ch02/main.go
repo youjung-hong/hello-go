@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+var g int = 10
+
 func main() {
 	// var a int = 3
 	// var b int
@@ -24,10 +26,19 @@ func main() {
 	// var h int = int(b) * 3
 
 	// fmt.Print(g, h)
-	var a int16 = 3456
-	var b int8 = int8(a)
-	var c int8 = 127
-	var d int8 = -127
+	// var a int16 = 3456 // 00001101 10000000
+	// var b int8 = int8(a) //        10000000 만 남음 -> 2의 보수로 -(01111111 + 1) -> -(128)
+	// var c int8 = 127
+	// var d int8 = -127
 
-	fmt.Print(a, b, c, d)
+	// fmt.Print(a, b, c, d)
+	var m int = 20
+
+	{
+		var s int = 50
+		fmt.Print(m, s, g)
+		fmt.Println(m, s, g)
+	}
+
+	m = s + 20
 }
